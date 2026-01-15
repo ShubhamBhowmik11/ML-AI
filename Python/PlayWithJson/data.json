@@ -1,0 +1,62 @@
+[
+	{
+		"id": "001",
+		"name": "Shubham",
+		"age": 24,
+		"email": "shubham@gmail.com",
+		"phone": "9876543210",
+		"salary": "45000",
+		"join_date": "2023-01-15",
+		"active": "yes"
+	},
+	{
+		"id": 2,
+		"name": "  Riya ",
+		"age": "twenty-five",
+		"email": "riya@@mail.com",
+		"phone": 987654321,
+		"salary": 52000,
+		"join_date": "15/02/2023",
+		"active": true
+	},
+	{
+		"id": "003",
+		"name": null,
+		"age": 29,
+		"email": "",
+		"phone": null,
+		"salary": "N/A",
+		"join_date": null,
+		"active": "false"
+	},
+	{
+		"id": 4,
+		"fullName": "Amit Kumar",
+		"age": 31,
+		"email": "amit.kumar@gmail.com",
+		"phone": "98-7654-3210",
+		"salary": 60000,
+		"join_date": "2023/03/10",
+		"active": "True"
+	},
+	{
+		"id": "005",
+		"name": "Neha",
+		"age": -22,
+		"email": "neha@gmail",
+		"phone": "98765",
+		"salary": null,
+		"join_date": "March 20, 2023",
+		"active": 1
+	},
+	{
+		"id": null,
+		"name": "Rahul",
+		"age": 27,
+		"email": "rahul@gmail.com ",
+		"phone": "9876543210",
+		"salary": "55000 INR",
+		"join_date": "2023-13-01",
+		"active": false
+	}
+]
