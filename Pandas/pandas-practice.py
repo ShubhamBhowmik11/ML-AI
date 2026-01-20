@@ -33,7 +33,49 @@ df = df.assign(new_Age = df["Age"] + 10)
 df["State"] = df["State"].replace("CA","JS")
 print(df)
 
-#Transforming Data  part 2
+
+#Transforming Data  part 2  16/jan/2026
+# through this we can change the name of all coulmns,just should know with number  of columns
+df.columns = ["id","name","age","gender","email","phone","address","city","state","country","nexAge"] 
+
+# if you to changes specfic column name then 
+df.rename(columns={"id":"ID"})
+
+# sort values
+res_df = df.sort_values(by="age")
+res_df = df.sort_values(by=["age","address"])
+
+
+
+#sort_index
+res_df = df.sort_index(ascending=False)
+#reset_index
+res_df = df.reset_index()
+#rank or reorder columns
+#res_df = df.rank()
+
+
+#task practice - task is that id  will swift to right most side of  dataset
+new_df = df.copy()
+new_index = [col for col in  df.columns if col != "id"] + ["id"]
+print(new_df[new_index])
+
+# write in csv file
+transform_data = df.dropna()
+transform_data = df.drop_duplicates()
+transform_data = df.sort_values(by="age",ascending=False)
+transform_data.to_csv("output.csv")
+
+
+#17/jan/2026
+# Grouping and Aggregating Data
+#groupy()  #mean()   #min()  #max()
+print(transform_data.groupby("country")["age"].mean())
+print(transform_data.groupby("country")["age"].min())
+print(transform_data.groupby("country")["age"].max())
+
+#pivot and melt
+
 
 
 
