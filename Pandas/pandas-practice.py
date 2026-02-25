@@ -77,5 +77,39 @@ print(transform_data.groupby("country")["age"].max())
 #pivot and melt
 
 
+#hist plot
+#print(transform_data["Age"])
+print(transform_data.plot(kind="scatter",x="Age",y="new_Age"))
 
 
+
+#merge 
+# by default it is innner join , if you want to use other join then you have to declation like left,right;
+
+
+#21/jan/2026
+#concontination
+
+
+
+# transaction
+#Atomicity - tasa will be complete or not at all 
+#Consistency - data will be in consistent state
+#isolation - transaction will be isolated from other transaction
+#durability - once transaction is committed it will be permenant
+
+
+#28/jan/2026
+#commit - save changes to the database
+
+
+#rollback - if face any kind of isssu duraing transaction it will rollback current state to previous stable state
+
+
+
+# savepoint - it is use to break a transaction in smaller parts so if any issues occur we can rollback to savepoint instead of entire transtaction
+  
+                     #Savepoint
+
+                     #Transcation
+                     #UPDATE accounts SET balance  = balance + 1000  WHERE id = 1;
